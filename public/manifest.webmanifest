@@ -1,0 +1,12 @@
+{
+  "name": "Uptowin — Your next adventure",
+  "short_name": "Uptowin",
+  "description": "A new era of mobile gaming. Play your way.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#10110f",
+  "theme_color": "#10110f",
+  "icons": [
+    { "src": "/pwa-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

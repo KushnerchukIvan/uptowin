@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+  background: var(--ink);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button,
+input {
+  font-family: var(--font-body);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--acid);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--acid);
+  outline-offset: 4px;
+}
+
+.site-shell {
+  min-height: 100vh;
+  overflow: clip;
+}
+
+.section-wrap {
+  padding-right: var(--gutter);
+  padding-left: var(--gutter);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 12px;
+  left: 12px;
+  padding: 10px 14px;
+  transform: translateY(-150%);
+  background: var(--acid);
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
