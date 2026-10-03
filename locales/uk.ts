@@ -57,8 +57,10 @@ export default {
     placeholder: 'name@example.com',
     action: 'Отримати запрошення',
     submitting: 'Надсилаємо…',
-    success: 'Готово! Скоро надішлемо запрошення.',
+    success: 'Готово! Лист-підтвердження вже надіслано на твою пошту.',
     error: 'Не вдалося приєднатися. Спробуй ще раз.',
+    configError: 'EmailJS не налаштований. Додай Service ID, Template ID і Public Key у .env, потім перезапусти dev-сервер.',
+    deliveryError: 'Не вдалося надіслати лист через EmailJS. Перевір налаштування служби й шаблону.',
     invalid: 'Введи коректну електронну пошту.',
   },
   footer: {

@@ -21,6 +21,11 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/styles/main.scss'],
+  runtimeConfig: {
+    emailjsServiceId: '',
+    emailjsTemplateId: '',
+    emailjsPublicKey: '',
+  },
   compatibilityDate: '2025-07-15',
   typescript: { strict: true, typeCheck: true },
   eslint: { config: { stylistic: true } },

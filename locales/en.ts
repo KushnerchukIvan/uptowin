@@ -57,8 +57,10 @@ export default {
     placeholder: 'name@example.com',
     action: 'Get early access',
     submitting: 'Sending…',
-    success: 'You’re on the list! Look out for an invite soon.',
+    success: 'Done! A confirmation email has been sent to your inbox.',
     error: 'Something went wrong. Please try again.',
+    configError: 'EmailJS is not configured. Add the Service ID, Template ID, and Public Key to .env, then restart the dev server.',
+    deliveryError: 'EmailJS could not send the email. Check the email service and template settings.',
     invalid: 'Enter a valid email address.',
   },
   footer: {
